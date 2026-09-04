@@ -23,11 +23,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Prepare site files
-        run: |
-          mkdir -p dist
-          cp index.html dist/index.html
-          if [ -f README.md ]; then cp README.md dist/README.md; fi
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Build GitHub Pages artifact
+        run: pnpm run build:pages
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

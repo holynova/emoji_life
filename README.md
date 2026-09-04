@@ -3,9 +3,11 @@
 一个单文件网页工具，用 emoji 生成你的人生时间线。  
 A single-file web app to generate your life timeline with emojis.
 
+Cloudflare 静态预览：[emoji-life.xiaosang.cc](https://emoji-life.xiaosang.cc/)
+
 ## Quick Start / 快速开始
 
-直接在浏览器打开 [index.html](/Users/sym/code/emoji_life/index.html)。  
+直接在浏览器打开仓库中的 `index.html`。  
 Open [index.html](/Users/sym/code/emoji_life/index.html) directly in your browser.
 
 ## Features / 功能
